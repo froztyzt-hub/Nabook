@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Detail Manga | NaBook</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<script>
+function checkout() {
+    const konfirmasi = confirm(
+        "Apakah Anda yakin ingin membeli manga ini?"
+    );
+
+    if (konfirmasi) {
+        alert(
+            "Pembelian berhasil!\nTerima kasih sudah berbelanja."
+        );
+    } else {
+        alert(
+            "Pembelian dibatalkan."
+        );
+    }
+}
+</script>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="home.html">NaBook</a>
+        <div class="ms-auto">
+            <a href="produk.html" class="btn btn-outline-light btn-sm">
+                ← Kembali
+            </a>
+        </div>
+    </div>
+</nav>
+
+<!-- Detail -->
+<section class="py-5">
+    <div class="container">
+        <div class="row g-5 align-items-start">
+
+            <!-- Cover -->
+            <div class="col-md-4 text-center">
+                <img src="Gambar/Gbr1.avif" class="detail-cover" alt="Cover Manga">
+            </div>
+
+            <!-- Info -->
+            <div class="col-md-8">
+                <h2 class="fw-bold">Jujutsu Kaisen</h2>
+                <p class="text-muted">Penulis: Gege Akutami</p>
+                <p class="text-muted">Genre: Action</p>
+                <p class="text-muted">Volume: 21</p>
+
+                <h4 class="text-primary mt-3">Rp 40.000</h4>
+
+                <p class="mt-3">
+                   Hakari dan Panda pergi ke Koloni Tokyo 2 karena mengincar Kashimo yang memiliki banyak poin. Tapi mereka terpisah saat memasuki koloni dan Hakari berhadapan dengan player bernama Charles yang bercita-cita menjadi seorang kreator manga! Sementara itu, Panda yang tak sengaja bertemu dengan Kashimo, terdesak oleh perbedaan kekuatan mereka yang sangat besar...!!
+
+                    Selling Point:
+                    Actionnya sangat seru! Serial populer di Jepang (dari majalah Shounen Jump, di mana judul-judulnya hampir semua jadi Best Seller di Jepang dan Internasional).
+                    Action seru dan cerita epik.
+                    Selalu masuk 10 besar Weekly Oricon.
+                </p>
+
+                <!-- Aksi -->
+                <div class="mt-4 d-flex gap-2">
+                     <button class="btn btn-primary btn-lg" onclick="checkout()">
+                        Checkout
+                    </button>
+                    <a href="produk.html" class="btn btn-outline-secondary btn-lg">
+                         Kembali
+                    </a>
+                    </div>
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer text-center">
+    <div class="container">
+        <p>&copy; 2026 NaBook</p>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,239 @@
+/* =====================
+   GLOBAL
+===================== */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+    background-color: #f2f4f7;
+    color: #2c2f33;
+}
+
+/* =====================
+   NAVBAR
+===================== */
+.navbar {
+    background-color: #1e293b !important;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: #d1d5db;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+    color: #ffffff;
+}
+
+/* =====================
+   HERO HOME (CAROUSEL)
+===================== */
+.hero-home {
+    position: relative;
+    height: 90vh;
+    overflow: hidden;
+}
+
+.hero-home .carousel,
+.hero-home .carousel-inner,
+.hero-home .carousel-item,
+.hero-home img {
+    height: 90vh;
+}
+
+.hero-home img {
+    width: 100%;
+    object-fit: cover;
+}
+
+/* Overlay di atas carousel */
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        rgba(15, 23, 42, 0.7),
+        rgba(15, 23, 42, 0.7)
+    );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #f9fafb;
+    padding: 20px;
+    z-index: 10;
+}
+
+.hero-overlay h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.hero-overlay p {
+    font-size: 1.2rem;
+    opacity: 0.9;
+}
+
+/* =====================
+   INFO BOX HOME
+===================== */
+.info-box {
+    background: #0f172a;
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+.info-box h5 {
+    font-weight: 600;
+    color: #f9fafb;
+}
+
+.info-box p {
+    color: #cbd5f5;
+    margin-bottom: 0;
+}
+
+/* =====================
+   PRODUK GRID
+===================== */
+.product-card {
+    border: none;
+    border-radius: 8px;
+    background: #ffffff;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.08);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 26px rgba(0,0,0,0.15);
+}
+
+/* COVER MANGA */
+.product-card img {
+    width: 100%;
+    aspect-ratio: 2 / 3;
+    object-fit: contain;
+    background-color: #f8fafc;
+    padding: 4px;
+}
+
+/* JUDUL & HARGA */
+.title {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 2px;
+}
+
+.price {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #2563eb;
+}
+
+/* =====================
+   DETAIL PAGE
+===================== */
+.detail-cover {
+    width: 100%;
+    max-width: 240px;
+    aspect-ratio: 2 / 3;
+    object-fit: contain;
+    background-color: #f8fafc;
+    padding: 6px;
+    border-radius: 8px;
+    box-shadow: 0 10px 24px rgba(0,0,0,0.18);
+}
+
+/* =====================
+   BUTTON
+===================== */
+.btn-primary {
+    background-color: #2563eb;
+    border: none;
+    font-weight: 600;
+}
+
+.btn-primary:hover {
+    background-color: #1d4ed8;
+}
+
+.btn-outline-secondary {
+    border-color: #9ca3af;
+    color: #374151;
+}
+
+.btn-outline-secondary:hover {
+    background-color: #e5e7eb;
+}
+
+/* =====================
+   CTA SECTION
+===================== */
+.cta {
+    background-color: #1e293b;
+    color: #f9fafb;
+    padding: 60px 20px;
+}
+
+/* =====================
+   VIDEO SECTION
+===================== */
+.video-section {
+    background-color: #f2f4f7;
+}
+
+.video-card {
+    background: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.video-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 30px rgba(0,0,0,0.15);
+}
+
+.video-card h6 {
+    font-weight: 600;
+    color: #1e293b;
+}
+
+/* =====================
+   FOOTER
+===================== */
+.footer {
+    background-color: #0f172a;
+    color: #cbd5f5;
+    padding: 18px 0;
+    margin-top: 40px;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 768px) {
+    .hero-overlay h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero-overlay p {
+        font-size: 1rem;
+    }
+
+    .detail-cover {
+        max-width: 200px;
+    }
+}
