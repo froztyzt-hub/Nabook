@@ -2,7 +2,7 @@
 <html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>Kontak | NaBook</title>
+    <title>Tentang | NaBook</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
@@ -18,11 +18,11 @@
     <div class="container">
         <a class="navbar-brand fw-bold" href="home.html">NaBook</a>
 
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuKontak">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuTentang">
             <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="menuKontak">
+        <div class="collapse navbar-collapse" id="menuTentang">
             <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
                     <a class="nav-link" href="home.html">Home</a>
@@ -31,10 +31,10 @@
                     <a class="nav-link" href="produk.html">Produk</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="tentang.html">Tentang</a>
+                    <a class="nav-link active" href="tentang.html">Tentang</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="kontak.html">Kontak</a>
+                    <a class="nav-link" href="kontak.html">Kontak</a>
                 </li>
             </ul>
         </div>
@@ -44,41 +44,43 @@
 <!-- Content -->
 <section class="py-5">
     <div class="container">
-        <h2 class="fw-bold mb-4 text-center">Hubungi Kami</h2>
+        <h2 class="fw-bold mb-4 text-center">Tentang NaBook</h2>
 
         <div class="row justify-content-center">
-            <div class="col-md-6">
-                <form>
-                    <div class="mb-3">
-                        <label class="form-label">Nama</label>
-                        <input type="text" class="form-control" placeholder="Masukkan nama">
-                    </div>
+            <div class="col-md-8 text-center">
 
-                    <div class="mb-3">
-                        <label class="form-label">Email</label>
-                        <input type="email" class="form-control" placeholder="Masukkan email">
-                    </div>
+                <!-- FOTO PROFIL -->
+                <img src="Gambar/profil.jpeg"
+                     alt="Foto Saya"
+                     class="img-fluid rounded shadow mb-4"
+                     style="max-width:200px;">
 
-                    <div class="mb-3">
-                        <label class="form-label">Pesan</label>
-                        <textarea class="form-control" rows="4" placeholder="Tulis pesan"></textarea>
-                    </div>
+                <p><strong>Nama :</strong> Nabil Alamsyah</p>
+                <p><strong>NIM :</strong> 24220124</p>
+                <p><strong>Kelas :</strong> SI 3G</p>
+                <p><strong>Mata Kuliah :</strong> Desain Web Lanjutan</p>
 
-                    <button type="submit" class="btn btn-primary w-100">
-                        Kirim Pesan
-                    </button>
-                </form>
+                <p class="mt-4 text-start">
+                    Saya merupakan mahasiswa yang memiliki ketertarikan di bidang pengembangan website dan sistem informasi. Saya terbiasa menggunakan teknologi web seperti HTML, CSS, Bootstrap, dan PHP dalam pembuatan website sederhana hingga menengah.
+                    <br><br>
+                    Website NaBook merupakan salah satu proyek yang saya kembangkan sebagai media penjualan manga secara online. Melalui proyek ini, saya menerapkan konsep desain antarmuka yang user-friendly, sistem pengelolaan data, serta alur transaksi sederhana agar mudah digunakan oleh pengguna.
+                    <br><br>
+                    Saya memiliki motivasi untuk terus belajar dan mengembangkan kemampuan di bidang teknologi informasi, khususnya dalam pengembangan aplikasi berbasis web yang fungsional dan bermanfaat.
+                </p>
+
             </div>
         </div>
     </div>
 </section>
 
+<!-- Footer -->
 <footer class="footer text-center">
     <div class="container">
         <p>&copy; 2026 NaBook</p>
     </div>
 </footer>
 
+<!-- Bootstrap JS (WAJIB AGAR NAVBAR TOGGLE JALAN) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
